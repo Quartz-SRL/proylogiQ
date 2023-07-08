@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      margin: 0;
+  }
+
+  .h1{
+    text-align: center;
+  }
+  .divContenedor {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .divOpciones {
+    margin-bottom: 20px;
+  }
+  
+  .divOpcionAlta,
+  .divModificar,
+  .divOpcionBaja {
+    margin-bottom: 10px;
+  }
+  
+  .divTabla {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos del formulario */
+  
+  .inputs {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 200px;
+  }
+  
+  .botonAlta,
+  .botonBaja,
+  .botonMod {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .botonAlta:hover,
+  .botonBaja:hover {
+    background-color: #45a049;
+  }
+  
+  /* Estilos de la lista de usuarios */
+  .lista{
+    text-align: center;
+  }
+
+ .mostrarLista,
+ .ocultarLista {
+   margin-bottom: 10px;
+   display: flex;
+   justify-content: center; 
+ }
+ 
+ .mostrarLista button,
+ .ocultarLista button {
+   padding: 5px 10px;
+   background-color: #4CAF50;
+   color: white;
+   border: none;
+   cursor: pointer;
+ }
+ 
+ .mostrarLista button:hover,
+ .ocultarLista button:hover {
+   background-color: #45a049;
+ }
+ 
+ #tablaUsuarios {
+   display: none;
+   margin-top: 20px; 
+ }
+ 
+ .tableUsuarios {
+   width: 100%;
+   border-collapse: collapse;
+ }
+ 
+ .tableUsuarios th,
+ .tableUsuarios td {
+   padding: 8px;
+   text-align: left;
+   border-bottom: 1px solid #ddd;
+ }
+ 
+ .tableUsuarios th {
+   background-color: #f2f2f2;
+ }
+ 
+ .extra {
+   font-weight: bold;
+ }
+ 
