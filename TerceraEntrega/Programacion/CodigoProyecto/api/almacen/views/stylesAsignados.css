@@ -1,0 +1,181 @@
+/* Estilos Generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #eae7de;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #e3dfd4;
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para la línea decorativa */
+.header-line {
+    height: 5px;
+    background-color: #ee4b2a;
+    margin-top: 0;
+}
+
+.logo {
+    margin-left: 20px;
+    float: left;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.primer-menu {
+    float: right;
+}
+
+.primer-menu ul {
+    list-style: none;
+    margin-right: 30px;
+}
+
+.primer-menu ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.primer-menu ul li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.4s ease;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Estilos de la Tabla */
+#table-container {
+    margin: 0 auto;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    border-radius: 15px;
+    max-width: fit-content;
+    margin-bottom: 20px;
+    overflow: auto;
+    max-height: 550px;
+}
+
+#table-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+#table-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+
+#table-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+table {
+    min-width: 800px;
+    margin: auto;
+    margin-top: 25px;
+    border-collapse: collapse;
+    background-color: #fff;
+    padding-top: 5px;
+    max-height: 550px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #e3dfd4;
+}
+
+/* Estilos de los Botones */
+button {
+    background-color: #ee4b2a;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin: 5%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ee4b2ad8;
+}
+
+#btnVolver{
+    font-size: 20px;
+    max-width: fit-content;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    border-radius: 5px;
+}
+a{
+    text-decoration: none;
+}
+/* Estilos del Pie de Página */
+.footer {
+    margin-top: 20px;
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+    background-color: #eae7de;
+    color: #2e2e2e;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-container .logo img {
+    height: 40px;
+}
+
+/* Estilos Responsivos */
+@media screen and (max-width: 640px) {
+    header {
+        height: auto;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-container .logo {
+        padding-top: 10px;
+    }
+
+    .footer {
+        text-align: center;
+    }
+}
